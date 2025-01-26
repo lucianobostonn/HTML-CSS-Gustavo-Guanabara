@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Em HTML: 'id' e em CSS '#'. ou seja, id=#  */
+/* Em HTML: 'class' e em CSS '.' ou seja, id=. */
+
+body{
+    background-color: rgb(45, 70, 45);
+    font-family: sans-serif;
+}
+
+h1{
+    color: red;
+}
+
+#principal{
+    color: blueviolet;
+    text-align: center;
+    background-color: black;
+}
+
+h2{
+    color: brown;
+    
+}
+
+.basico{
+    color: blue;
+    background-color: black;
+}
+
+.intermediario{
+    color: white;
+    background-color: brown;
+}
+
+.avançado{
+    color: rgb(80, 41, 14);
+    background-color: white;
+}
+/* Também posso colocar duas classes num mesmo item, ou uma class e um id num mesmo item, ou dois id num mesmo item 
+E o id sobrepõe o class, ou sejua, se usares os dois, o id tem prioridade*/
+
+.destaque{
+    text-shadow: 30px 30px 3px yellow;
+}

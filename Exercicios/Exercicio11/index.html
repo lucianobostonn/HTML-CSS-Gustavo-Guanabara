@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>   
+    <p>Tente abrir este site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 730px)" srcset="Imagens/Imagem-Pequena.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="Imagens/Imagem-Media.png" type="image/png">
+        <img src="Imagens/Imagem-Grande.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- <picture>
+        <source media="(min-width: 1030px)" srcset="Imagens/Imagem-Grande.png" type="image/png">
+        <source media="(min-width: 730px)" srcset="Imagens/Imagem-Media.png" type="image/png">
+        <img src="Imagens/Imagem-Pequena.png" alt="Imagem n flexível">
+    </picture>                             Usando o min-width     -->
+
+    <h1>Reproduzindo Áudio</h1>
+<p>Vamos meter um som foda no Site</p>
+<audio src="media/War.mp3" controls>I'm ready for war my brother</audio>
+
+</body>
+</html>

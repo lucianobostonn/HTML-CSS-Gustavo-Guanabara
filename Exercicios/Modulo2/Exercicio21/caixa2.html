@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        
+        }
+        nav{
+            background-color: rgb(160, 160, 160);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 60px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* Border radius, também se configura como o padding e a margem, dando as medidas no sentido horário, começando no canto superior equerdo */
+            border-radius: 20px 20px 50px 50px;
+           
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgb(102, 100, 100);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            
+        }
+        footer > p{
+            margin: 0px;
+            padding: 4px;
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p style="font-size: 20px;">Desporto, política e tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre Angola</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odio vitae reprehenderit! Temporibus, nam error laborum assumenda mollitia, debitis quis soluta tenetur magni consectetur labore accusantium, suscipit quidem non deserunt.
+                <aside>
+                    <p>Artigo escrito por <i>Luís Neto</i></p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por Márcio</p>
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
