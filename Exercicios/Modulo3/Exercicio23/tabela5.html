@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse:collapse ;
+        }
+
+        caption{
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .comida{
+            background-color: rgb(75, 74, 74);
+        }
+
+        .csexo{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+        <col class="comida">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+
+        <!-- Os <col podem ter qualquer nome, é só defini-los pela ordem em que estão no código
+         Se eu quiser crio apenas um <col e escrevo <col class="nome qualquer" span="4"
+         É só informar a quantidade de colunas que quero pegar, ou seja, se a primeira já tiver uma class, então ele vai pegar apartir da que n tem e dar sequência em todas as que faltam -->
+        </colgroup>
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25 Anos</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Claúdio</td>
+                <td>F</td>
+                <td>28 Anos</td>
+                <td>Programador</td>
+            </tr>
+
+            <tr>
+                <td>Gustavo</td>
+                <td>F</td>
+                <td>42 Anos</td>
+                <td>Professor</td>
+            </tr>
+
+            <tr>
+                <td>Hélio</td>
+                <td>F</td>
+                <td>19 Anos</td>
+                <td>Vendedor</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39 Anos</td>
+                <td>Médica</td>
+            </tr>
+
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22 Anos</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
