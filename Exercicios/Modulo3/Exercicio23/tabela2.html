@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Tabelas Grandes</title>
+</head>
+<body>
+    <h1>Usando Tabelas Grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Província</th>
+                <th>Código ISO</th>
+                <th>Capital</th>
+                <th>Área(km^2)</td>
+                <th>População(Censo 2014)</th>
+                <th>Municípios</th>
+                <th>Comunas</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <td>Bengo</td>
+            <td>BGO</td>
+            <td>Caxito</td>
+            <td class="numero">15 506</td>
+            <td class="numero">356 641</td>
+            <td class="numero">6</td>
+            <td class="numero">23</td>
+            <tr>
+                <td>Benguela</td>
+                <td>BGU</td>
+                <td>Benguela</td>
+                <td class="numero">31 788</td>
+                <td class="numero">2 231 385</td>
+                <td class="numero">10</td>
+                <td class="numero">38</td>
+            </tr>
+
+            <tr>
+                <td>Huambo</td>
+                <td>HUA</td>
+                <td>Huambo</td>
+                <td class="numero">34 274</td>
+                <td class="numero">2 019 555</td>
+                <td class="numero">11</td>
+                <td class="numero">37</td>
+            </tr>
+
+            <tr>
+                <td>Huíla</td>
+                <td>HUI</td>
+                <td>Lubango</td>
+                <td class="numero">75 002</td>
+                <td class="numero">2 497 422</td>
+                <td class="numero">14</td>
+                <td class="numero">37</td>
+            </tr>
+
+            <tr>
+                <td>Luanda</td>
+                <td>LUA</td>
+                <td>Luanda</td>
+                <td class="numero">18 283</td>
+                <td class="numero">6 945 386</td>
+                <td class="numero">9</td>
+                <td class="numero">14</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>25 789 024</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
