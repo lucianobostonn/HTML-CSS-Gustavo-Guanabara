@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+.sriracha-regular {
+    font-family: "Sriracha", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.passion-one-bold {
+    font-family: "Passion One", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Para colocar todas as letras em Maiúsculas, digito "text-transform:uppercase */
+body{
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    font-family: "Passion One";
+    color: white;
+}
+
+header > h1{
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;  
+}
+
+section{
+    font-size: 3.5vw;
+    color: black;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section p{
+    font-family: "Sriracha";
+    padding-bottom: 2em;
+}
+section#first{
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.664);
+}
+
+section#second{
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.466);
+}
+
+.artigos{
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+}
