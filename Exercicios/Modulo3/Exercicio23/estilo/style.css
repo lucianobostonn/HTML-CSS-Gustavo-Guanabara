@@ -7,10 +7,24 @@ body{
 table{
     width: 1000px;
     border-collapse: collapse;
+    position: relative;
+}
+
+caption{
+    font-size: 24px;
+    background-color: lightgrey;
+    font-weight: bold;
+    padding: 7px;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: #494848;
 }
 
 thead, tfoot{
-    background-color: grey;
+    background-color: #494848;
     color: white;
 }
 
@@ -22,3 +36,15 @@ td, th{
 td.numero{
     text-align: right;
 }
+
+tbody > tr:nth-child(odd){
+    background-color: gray;
+
+    /* Efeito Zebrado, para facilitar a leitura caso a tabela for muito grande. Então terá uma linha pintada e outra não, dependendo se configurares para pular quantas linhas.
+    Podes escrever odd: que significa as células impares
+    Podes escrever even: que significa as células pares
+    Podes escrever 2n, 3n: Que seria de duas em duas linhas faz coisa x, de três em três linhas faz coisa y*/
+}
+
+
+/* E posso aproveitar essa pseudo classe para fazer coisas melhores. Tipo ao em vez de pintar apenas, é só usar a minha imaginação */

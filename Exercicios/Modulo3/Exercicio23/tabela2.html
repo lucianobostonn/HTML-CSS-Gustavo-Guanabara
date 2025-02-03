@@ -10,6 +10,7 @@
     <h1>Usando Tabelas Grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION(TÍTULO OU LEGENDA DA TABELA)
         THEAD
             TR, TD, TH
         TBODY
@@ -18,26 +19,30 @@
             TR, TD, TH -->
 
     <table>
+        <caption>Dados Gerais das provincias</caption>
         <thead>
             <tr>
-                <th>Província</th>
-                <th>Código ISO</th>
-                <th>Capital</th>
-                <th>Área(km^2)</td>
-                <th>População(Censo 2014)</th>
-                <th>Municípios</th>
-                <th>Comunas</th>
+                <th scope="col">Província</th>
+                <th scope="col">Código ISO</th>
+                <th scope="col">Capital</th>
+                <th scope="col">Área(km^2)</td>
+                <th scope="col">População</th>
+                <th scope="col">Municípios</th>
+                <th scope="col">Comunas</th>
             </tr>
         </thead>
 
         <tbody>
-            <td>Bengo</td>
-            <td>BGO</td>
-            <td>Caxito</td>
-            <td class="numero">15 506</td>
-            <td class="numero">356 641</td>
-            <td class="numero">6</td>
-            <td class="numero">23</td>
+            <tr>
+                <td>Bengo</td>
+                <td>BGO</td>
+                <td>Caxito</td>
+                <td class="numero">15 506</td>
+                <td class="numero">356 641</td>
+                <td class="numero">6</td>
+                <td class="numero">23</td>
+            </tr>
+
             <tr>
                 <td>Benguela</td>
                 <td>BGU</td>
@@ -77,14 +82,135 @@
                 <td class="numero">9</td>
                 <td class="numero">14</td>
             </tr>
+            
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
+
+            <tr>
+                <td>Vamos ver</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>25 789 024</strong></td>
             </tr>
         </tfoot>
     </table>
 </body>
 </html>
+
+<!-- Escopo: scope
+ N causa nenhuma alteração visual, mas ajuda os mecanismos de busca a encontrarem essas informações.
+ E os tipos de scope são:
+scope: col e scope: colgroup|| Isso para os cabeçalhos que têm os seus dados em baixo deles, ou seja, na mesma coluna
+scope: row e scope: rowgroup|| Isso para os cabeçalhos que têm os seus dados na frente deles, ou seja, na mesma linha. Exemplo prático, nas tabelas o Total de algo aparece a frente da palavra total
+  -->
