@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+    <p>Acessando o site do 
+    <iframe src="http://www.cursoemvideo.com/" frameborder="0" height="500px" width="500">
+        Seu dispositivo n suporta esta configuração! <a href="http://www.cursoemvideo.com/">Acesse o site pelo link</a>
+    </iframe>
+    para aprender a programar</p>
+
+    <p>O Projeto-cordel do Márcio 
+        <iframe src="https://lucianobostonn.github.io/Projeto-cordel/" frameborder="0" height="500">
+           Seu dispositivo n suporta esta configuração! <a href="https://lucianobostonn.github.io/Projeto-cordel/" target="_blank">Acesse o site pelo link</a>   <!--Se escreve algo no meio para os dispositivos que n forem compatíveis, ou seja, n vai aparecer o iframe, mas vai aparecer essa mensagem alternativa-->
+    </iframe> 
+    também é muito fixe e lá podes aprender a ser Mau</p>
+</body>
+</html>
+
+<!-- Os Iframes têm como tamanho padrão 300x150, ou seja, width:300px e height:150px -->
+
+<!-- Existe o parâmetro "soclling", onde posso colocar 
+ scolling="auto"- é o padrão, que permite barra de rolagem caso o conteúdo seja maior do que a parte que está sendo exibida
+ scolling="yes"- Mesmo que o conteúdo já aparece todo, ele cria uma barra de rolagem
+ scolling="no"- Não permite a barra de rolagem, vai ficar grudado para parte que aparece incialmente. Em muitos navegadores n funciona, por exemplo no Google Chrome do Windows n funciona, mas no Google Chrome do Mac funciona 
+ -->
