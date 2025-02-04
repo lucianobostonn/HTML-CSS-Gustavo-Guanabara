@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt laborum laudantium cum eius nostrum, molestias asperiores quaerat corrupti officiis doloribus fugit laboriosam odit minus quam maxime expedita quis odio pariatur?</p>
+
+    <iframe src="paginas-extras/pag4.html" width="400px" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador n é compatível com esta configuração kkkk
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deleniti voluptatum neque aspernatur sequi dolore est natus. Odit dicta error quasi saepe! Commodi mollitia tenetur dicta voluptas veniam minus ex!</p>
+</body>
+</html>
+
+<!--Use o sandbox nos iframes para proteger o seu site.  
+Pois ele impede ações que estejam neste site externo do iframes, por exemplo fazer login entre outros
+Se usares sandbox="sandbox", ele ativa todos os tipos de proteções, mas podes escolhar apenas as que queres
+Ex.: sandbox="allow-same-origin", permitir conteúdo da mesma origem, tipo se for algo que faz parte do meu código
+sandbox="allow-same-origin allow-forms", permitir conteúdo da mesma origem e permitir formulários
+Também podes usar o referrerpolicy, o valor padrão dele é o referrerpolicy="no-referrer-when-downgrade"
+Então para protegeres digite, referrerpolicy="no-referrer"
+-->
