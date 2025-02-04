@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ipsa repudiandae, earum ipsum eius optio voluptatem id reprehenderit quisquam quo qui? Nam aut harum quibusdam autem iure ipsam minus a!</p>
+    
+    <ul>
+        <li><a href="paginas-extras/pag1.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag2.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag3.html" target="frame">Tecrceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores architecto optio quo quod nesciunt, minima neque odio ipsum, cupiditate adipisci dignissimos quis sequi, nulla cumque sunt totam facilis molestiae!</p>
+
+    <iframe name="frame"  srcdoc="<h1> Escolha uma das opções acima </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium cumque nobis, culpa, nam vero consequatur recusandae dolor delectus quidem, tempora architecto sapiente sit. Ea quis explicabo voluptates quaerat dicta!</p>" >
+        Infelizmente seu dispositivo n é capaz de exibir este conteúdo
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam animi debitis nulla iusto voluptate, dolore laboriosam optio repellendus eius cum soluta esse a sit numquam adipisci deleniti quod facere accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quidem ullam hic ratione id nulla harum dolore nisi laboriosam. Non accusamus velit vel iure quis perspiciatis ea, expedita dolorum sequi.</p>
+</body>
+</html>
+
+<!-- Posso usar o srdoc para criar códigos html diretamente de lá.
+ Ex.: srcdoc="<h1> Escolha uma das opções acima </h1>"
+ Ex.: srdoc="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium cumque nobis, culpa, nam vero consequatur recusandae dolor delectus quidem, tempora architecto sapiente sit. Ea quis explicabo voluptates quaerat dicta!</p>" -->
