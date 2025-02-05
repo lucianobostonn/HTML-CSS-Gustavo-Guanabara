@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!-- Se eu quiser desligar o completador automático, ou seja, aquela caixa que aparecer embaixo dos formulários sugerindo nomes, emails e outras informações que já eu já digitei anteriormente 
+<form autocomplete="off">
+-->
+
+<!-- Esse action="cadastro.php" é o lugar onde será enviado os dados, quando clicarmos no botão do submit. N tem nenhum arquivo criado, então n vai para lugar nenhum. 
+ E n precisa obrigatoriamente enviar para PHP, pode ser qualquer linguagem -->
+
+ <!-- Depois de criar o Label, no "for" coloca-se sempre o id -->
+
+ <!-- Metodos "method=" por padrão o metodo é Get, aquele em que aparecem os dados submetidos na URL e n pode ser usado para submeter dados superiores a 3mil bytes, ou seja, mais ou menos 3mil letras, n se pode submeter(enviar) fotos com o get, nem outros arquivos. Mas posso usar o post para os dados n aparecerem lá na URL e para poder submeter esses ficheiros e dados grandes -->

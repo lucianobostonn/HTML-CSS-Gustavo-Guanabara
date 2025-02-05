@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome de Usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="25" size="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Para n permitir que o usuário clique em enviar sem colocar nenhuma informação, use o parametro "required" -->
+
+<!-- Agora para definir o máximo e o mínimo de caracteres que ele pode e deve digitar, é só usar "minlenght" e "maxlenght" -->
+
+<!-- Tamanho da caixa, é só usar o "size", na linha mesmo, ou seja, com HTML mesmo -->
+
+<!-- Para colocar aquela pré-vizualização de texto na caixa, é só usar o "placeholder" e escrever o que eu quero que apareça -->
+
+<!-- Para o autocomplete, pode se especificar em cada input qual é o seu tipo.
+ Para isso basta colocar "autocomplete=on" no form, e nos input também digitas "autocomplete" e é só escolher o tipo de autocomplete, se é para nome de usuário, senha, ou seja lá o que for -->
