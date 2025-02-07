@@ -8,7 +8,7 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
             <label for="iest">Jogos</label>
@@ -31,6 +31,24 @@
             </select>
         </p>
 
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprofs">
+            <datalist id="listprofs">
+                <option value="Prof">Professor</option>
+                <option value="Bom">Bombeiro</option>
+                <option value="Med">Médico</option>
+                <option value="PM">Polícia</option>
+                <option value="Mlt">Militar</option>
+                <option value="Txs">Táxista</option>
+                <option value="Yt">Youtuber</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva a sua Mensagem..."></textarea>
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
