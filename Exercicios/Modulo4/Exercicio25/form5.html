@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radio button</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="sexm" checked value="M"> <label for="sexm">Masculino</label> <br>
+            <input type="radio" name="sx" id="sexf" value="F"> <label for="sexf">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="fute" id="ifute"> <label for="ifute">Futebol</label> <br>
+                <input type="checkbox" name="basquet" id="ibasquet"> <label for="ibasquet">Basquetebol</label> <br>
+                <input type="checkbox" name="muscle" id="imuscle" checked> <label for="imuscle">Musculação</label> <br>
+                <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label> <br>
+                <input type="checkbox" name="run" id="irun"> <label for="irun">Corrida</label> <br>
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Para deixar já uma opção marcada, é só digitar checked -->
+ <!-- No input radio. O name deve ser o mesmo para todas as opções. Para podes escolher apenas uma opção -->
