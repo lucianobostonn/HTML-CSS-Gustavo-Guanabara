@@ -3,5 +3,6 @@
 /* Configurações em pé*/
 
 body{
-    background-color: blue;
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
