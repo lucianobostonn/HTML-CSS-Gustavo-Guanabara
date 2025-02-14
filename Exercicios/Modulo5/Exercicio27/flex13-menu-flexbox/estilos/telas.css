@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px){
+@media screen and (min-width:535px){
 
     header{
         display: flex;
@@ -13,13 +13,12 @@
         margin-right: 100px;
     }
 
+    menu{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
     menu > ul > li{
-        color: white;
-        background-color: black;
-        padding: 10px;
-        margin: 0px;
-        border-radius: 6px;
-        list-style-type: none;
         width: 70px;
         display: inline-block;
     }
